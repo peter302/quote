@@ -7,7 +7,7 @@ import{Quote} from '../quote'
   styleUrls: ['./quote-display.component.css']
 })
 export class QuoteDisplayComponent implements OnInit {
-  quotes:Quote [] =[new Quote("kuria","peter",new Date())]
+  quotes:Quote [] =[new Quote("get a great car for holiday","peter",new Date())]
 
   
 

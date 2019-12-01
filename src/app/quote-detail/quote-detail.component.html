@@ -4,7 +4,7 @@
       <p>{{quote.detail}}</p>
       </div>
     <div class="card-footer">
-     <i class=" fa fa-thumbs-up"  style="color:green;size:30px" (click)="upvote()">{{quote.likes}}</i><span>|</span><i  class="fa fa-thumbs-down" style="color:red"(click)="downvote()">{{quote.dislikes}}</i>
+     <button type="button"class="btn btn-primary btn-sm">{{quote.likes}} </button><span class="glyphicon glyphicon-thumbs-up"></span><i class="fa fa-thumbs-up"  style="color:green;size:100px" (click)="upvote()"></i><button type="button" class="btn btn-warning btn-sm">{{quote.dislikes}}</button><i  class="fa fa-thumbs-down" style="color:red"(click)="downvote()"></i>
      
      </div>
 </div>
