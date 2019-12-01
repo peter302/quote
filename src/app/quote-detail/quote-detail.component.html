@@ -1,4 +1,9 @@
-<p>{{quote.detail}}</p>
-
-<button type="button" class="btn btn-success" (click)="downvote()">downvote:{{quote.dislikes}}</button><span>|</span><button type="button" (click)="upvote()">upvote:{{quote.likes}}</button>
-<p>{{quote.dislikes}} </p>
+<div class="card">
+    <div class="card-body">
+      <p>{{quote.detail}}</p>
+      </div>
+    <div class="card-footer">
+     <button class="btn btn-success" (click)="upvote()">upvote:{{quote.likes}}</button><span>|</span><button  class="btn btn-danger" (click)="downvote()">downvote:{{quote.dislikes}}</button>
+     
+     </div>
+</div>
