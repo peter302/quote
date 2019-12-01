@@ -1,13 +1,17 @@
 <div class="container">
     <div class="row">
         <div class="col-md-6">
-<div>
     <ul>
         <li *ngFor='let quote of quotes'>{{quote.detail}}
             <app-quote-detail [quote]='quote'></app-quote-detail>
           
         </li>
     </ul>
+        </div>
+    <div class="col-md-6">
+        <app-quote-form></app-quote-form>
     </div>
+
+    
 </div>
 </div>

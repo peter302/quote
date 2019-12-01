@@ -1,22 +1,22 @@
 <div class="container-fluid">
         <h2 class="text-center">Post a new quote</h2>
         <hr>
-        <form>
+        <form #quoteform="ngForm">
             <div class="form-group">
       
                 <label for="name">Name:</label>
-                <input type="text" required class="form-control" id="name">
+                <input type="text" required class="form-control" id="name" [(ngModel)]="newQuote.name" name="Name">
       
             </div>
             <div class="form-group">
       
                 <label for="details">Post:</label>
-                <textarea class="form-control" id="description" rows="4" required></textarea>
+                <textarea class="form-control" id="description" rows="4" required [(ngModel)]="newQuote.detail" name="detail"></textarea>
       
             </div>
             <div class="form-group">
                 <label for="complete">Date:</label>
-                <input type='date' id="complete" required>
+                <input type='date' id="complete" required [(ngModel)]="newQuote.completeDate" name="Date">
       
             </div>
             <button type="submit" class="btn btn-primary">Submit your post</button>
