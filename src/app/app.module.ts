@@ -10,6 +10,7 @@ import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { TimesinceComponent } from './timesince/timesince.component';
 import { DateCountPipe } from './date-count.pipe';
+import { ApphighlightDirective } from './apphighlight.directive';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { DateCountPipe } from './date-count.pipe';
     QuoteFormComponent,
     TimeAgoPipe,
     TimesinceComponent,
-    DateCountPipe
+    DateCountPipe,
+    ApphighlightDirective
   ],
   imports: [
     BrowserModule,
