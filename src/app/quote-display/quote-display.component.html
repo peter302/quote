@@ -2,14 +2,15 @@
     <div class="row">
         <div class="col-md-6">
     <ul>
-        <li *ngFor='let quote of quotes'>{{quote.detail}}
+        <li *ngFor='let quote of quotes;let i=index'>{{quote.title}}
             <app-quote-detail [quote]='quote'></app-quote-detail>
+            <p>posted by {{quote.name}} :{{quote.completeDate|timeAgo}}</p>
           
         </li>
     </ul>
         </div>
-    <div class="col-md-6">
-        <app-quote-form></app-quote-form>
+    <div class="col-md-6" style="background-color: forestgreen;">
+        <app-quote-form (addQuote)="quotePlus($event)"></app-quote-form>
     </div>
 
     
