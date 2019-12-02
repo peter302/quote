@@ -1,15 +1,18 @@
 <div class="container">
+        <div style="background:transparent !important" class="jumbotron"><h1>Expereince the new Quote app in the city!</h1><hr >
+    <p>you can start making and uploading your posts NOW!!!!</p>
+    <p style="text-decoration-color: bisque;">TO UPVOTE OR DOWNVOTE A QUOTE,CLICK EITHER THE THUMBS-UP OR THUMBS-DOWN ICONS RESPECTIVELY</p></div>
     <div class="row">
         <div class="col-md-6">
     <ul>
         <li *ngFor='let quote of quotes;let i=index'>{{quote.title}}
             <app-quote-detail [quote]='quote'></app-quote-detail>
-            <p>posted by {{quote.name}} :{{quote.completeDate|timeAgo}}</p>
+            <p>posted by {{quote.name}} :{{quote.completeDate|dateCount}}</p>
           
         </li>
     </ul>
         </div>
-    <div class="col-md-6" style="background-color: forestgreen;">
+    <div class="col-md-6" >
         <app-quote-form (addQuote)="quotePlus($event)"></app-quote-form>
     </div>
 

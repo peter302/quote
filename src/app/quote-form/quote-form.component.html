@@ -1,7 +1,7 @@
 <div class="container-fluid">
         <h2 class="text-center">Post a new quote</h2>
         <hr>
-        <form (ngSubmit)='submitQuote()'#quoteform="ngForm">
+        <form (ngSubmit)='submitQuote()'#quoteform="ngForm" style="background-color: skyblue;">
             <div class="form-group">
       
                 <label for="name">Name:</label>
@@ -19,7 +19,7 @@
             <div class="form-group">
       
                 <label for="details">Post:</label>
-                <textarea class="form-control" id="description" rows="4" required [(ngModel)]="newQuote.detail" name="detail" #detail="ngModel"></textarea>
+                <textarea class="form-control" id="description" rows="4" [(ngModel)]="newQuote.detail" name="detail" #detail="ngModel"required></textarea>
                 <div [hidden]="detail.valid || detail.pristine" class="alert alert-danger"><p>required</p>
       
             </div>
