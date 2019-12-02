@@ -22,7 +22,7 @@ Angular and node installations
 
 Link to deployed page:
 
-https://emdeechege.github.io/Angular-quotes/
+https://peter302.github.io/quote/
 
 
 Technologies used
