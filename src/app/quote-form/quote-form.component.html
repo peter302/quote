@@ -18,6 +18,13 @@
             </div>
             <div class="form-group">
       
+                    <label for="author">Author of the Post:</label>
+                    <input type="text" class="form-control" id="author" rows="4" [(ngModel)]="newQuote.author" name="author" #author="ngModel"required>
+                    <div [hidden]="author.valid || author.pristine" class="alert alert-danger" required><p>required</p>
+          
+                </div>
+            </div>
+            <div class="form-group">
                 <label for="details">Post:</label>
                 <textarea class="form-control" id="description" rows="4" [(ngModel)]="newQuote.detail" name="detail" #detail="ngModel"required></textarea>
                 <div [hidden]="detail.valid || detail.pristine" class="alert alert-danger"><p>required</p>

@@ -5,8 +5,8 @@
     <div class="row">
         <div class="col-md-6">
     <ul>
-        <li *ngFor='let quote of quotes;let i=index'>{{quote.title}}
-            <app-quote-detail [quote]='quote'></app-quote-detail>
+        <li *ngFor='let quote of quotes;let i=index'>{{quote.title}} authored by {{quote.author}}
+            <app-quote-detail [quote]='quote' (clear)="quoteDeleted($event,i)"></app-quote-detail>
             <p>posted by {{quote.name}} :{{quote.completeDate|dateCount}}</p>
           
         </li>
