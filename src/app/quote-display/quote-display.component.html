@@ -7,7 +7,7 @@
     <ul>
         <li *ngFor='let quote of quotes;let i=index'>{{quote.title}} authored by {{quote.author}}
             <app-quote-detail [quote]='quote' (clear)="quoteDeleted($event,i)"></app-quote-detail>
-            <p>posted by {{quote.name}} :{{quote.completeDate|dateCount}}</p>
+            <p>posted by {{quote.name}} :{{quote.completeDate|timeAgo}}</p>
           
         </li>
     </ul>
