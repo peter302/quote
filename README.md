@@ -10,7 +10,7 @@
   Project name: Quotesapp  
  
  
- Description: Quoteapp was developed using angular.You can add a quote, upvote and downvote the quotes as
+ Description: Quoteapp was developed using angular.You can add a quote by filling your details on the form provided for you at the right side of your web page and then submit by clicking the submit button,your quote will appear under the already published quotes with the time you posted.You can  upvote by clicking the green upthumb icon and downvote by clicking the red downtumb icon. you can also delete the quotes by clicking the trash icon.
 
 
 Setup/Installation Requirements
