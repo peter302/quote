@@ -28,6 +28,7 @@ https://peter302.github.io/quote/
 Technologies used
 
 Angular, HTML, CSS, Bootstrap.
+
 License and terms of use
 
 MIT License this application's source code is free for any open source projects
